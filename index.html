@@ -6,6 +6,10 @@
   <meta name="color-scheme" content="dark light" />
   <title>Fractaline: Infinite Coloring — Calm Fractal &amp; Stained-Glass Studio</title>
   <meta name="description" content="Unwind with endless fractals, mandalas, stained glass, relaxing offline music, and tactile brushes on iPhone and iPad. Zero subscriptions, zero ads." />
+  <meta property="og:title" content="Fractaline: Infinite Coloring" />
+  <meta property="og:description" content="Calm fractal &amp; stained-glass coloring studio for iPhone and iPad. Zero subscriptions, zero ads, 100% offline." />
+  <meta property="og:image" content="https://terakilobyte.github.io/fractaline/banner.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <style>
     :root {
       color-scheme: dark light;
@@ -47,6 +51,21 @@
       max-width: 920px;
       margin: 0 auto;
       padding: 48px 22px 72px;
+    }
+    .banner-frame {
+      margin: 0 0 24px;
+      border-radius: 26px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.32);
+      background: #0b0d17;
+    }
+    .banner-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2 / 1;
+      object-fit: cover;
     }
     .hero {
       display: flex;
@@ -142,6 +161,17 @@
 </head>
 <body>
   <main class="wrap">
+    <figure class="banner-frame">
+      <img
+        src="./banner.jpg"
+        alt="Double-spiral Julia fractal partially colored in glowing stained-glass jewel tones transitioning into crisp uncolored line art"
+        class="banner-img"
+        width="1600"
+        height="800"
+        fetchpriority="high"
+      />
+    </figure>
+
     <section class="hero">
       <img src="./icon.png" alt="Fractaline app icon" class="app-icon" width="112" height="112" fetchpriority="high" />
       <div class="hero-copy">
