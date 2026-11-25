@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Fractaline: Infinite Coloring — Calm Fractal &amp; Stained-Glass Studio</title>
+  <meta name="description" content="Unwind with endless fractals, mandalas, stained glass, relaxing offline music, and tactile brushes on iPhone and iPad. Zero subscriptions, zero ads." />
+  <style>
+    :root {
+      color-scheme: dark light;
+      --bg: #0e101c;
+      --bg-grad-a: #161830;
+      --bg-grad-b: #0b0d17;
+      --surface: rgba(255, 255, 255, 0.06);
+      --border: rgba(255, 255, 255, 0.12);
+      --ink: #f4f5fb;
+      --muted: #b4b9d4;
+      --accent: #7c7aff;
+      --accent-soft: rgba(124, 122, 255, 0.16);
+      --teal: #5eead4;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8f5ef;
+        --bg-grad-a: #fbf8f2;
+        --bg-grad-b: #eef0f8;
+        --surface: #ffffff;
+        --border: rgba(26, 28, 48, 0.08);
+        --ink: #1c1d2e;
+        --muted: #5a5d75;
+        --accent: #4f46e5;
+        --accent-soft: rgba(79, 70, 229, 0.10);
+        --teal: #0f766e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at 20% 10%, var(--bg-grad-a), var(--bg-grad-b) 70%);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 22px 72px;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 28px;
+      padding: 32px;
+      border-radius: 28px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+    .app-icon {
+      width: 112px;
+      height: 112px;
+      border-radius: 26px;
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.35);
+      flex-shrink: 0;
+    }
+    .hero-copy { flex: 1 1 320px; }
+    .pill {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--teal);
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+      line-height: 1.15;
+    }
+    .lead {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-decoration: none;
+      color: #ffffff;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid var(--border);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .card {
+      padding: 22px;
+      border-radius: 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+    .card h2 {
+      margin: 0 0 6px;
+      font-size: 1.1rem;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+    footer {
+      margin-top: 44px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="./icon.png" alt="Fractaline app icon" class="app-icon" width="112" height="112" fetchpriority="high" />
+      <div class="hero-copy">
+        <span class="pill">Zero Subscriptions &bull; Zero Ads &bull; 100% Offline</span>
+        <h1>Fractaline: Infinite Coloring</h1>
+        <p class="lead">
+          A calm, tactile coloring studio for iPhone and iPad. Explore endless fractals, mandalas,
+          stained glass, geometric tiles, and botanical patterns with relaxing offline soundscapes.
+        </p>
+        <div class="nav-links">
+          <a class="btn" href="./support.html">Support &amp; FAQ</a>
+          <a class="btn btn-ghost" href="./privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Highlights">
+      <article class="card">
+        <h2>5 Endless Coloring Studios</h2>
+        <p>Mandalas &amp; Sacred, Stained Glass, Infinite Fractals (Julia, Mandelbrot, Circle Bubbles, Crystal Webs &amp; Snowflakes), Geometric Tiles, and Botanical &amp; Flow — plus a free Daily Zen page every day.</p>
+      </article>
+      <article class="card">
+        <h2>Tactile Brushes &amp; Smart Mask</h2>
+        <p>Stay effortlessly inside crisp lines or paint freehand with Colored Pencil, Marker, Airbrush, Fine Ink, Watercolor, Pastel, Oil Paint, Stipple, Iridescent, Neon Glow, Gold Leaf, Tap Fill, and Symmetry coloring.</p>
+      </article>
+      <article class="card">
+        <h2>Relaxing Offline Studio Audio</h2>
+        <p>9 original offline music moods (Neon Chillwave, Kyoto Lo-Fi, Piano &amp; Violin, Rainy Jazz &amp; more), stereo Binaural Beats, soft rain, pencil ASMR, and live animated space &amp; aurora backdrops.</p>
+      </article>
+      <article class="card">
+        <h2>Own Forever, Family Sharing</h2>
+        <p>No subscriptions and no ads — ever. Start free, unlock only the studios you love, or grab the Complete Studio Bundle once with Apple Family Sharing included.</p>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Nathan Leniz &bull; <a href="./privacy.html">Privacy Policy</a> &bull; <a href="./support.html">Support</a></p>
+    </footer>
+  </main>
+</body>
+</html>
